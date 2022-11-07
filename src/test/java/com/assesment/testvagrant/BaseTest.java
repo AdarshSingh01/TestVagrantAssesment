@@ -45,7 +45,7 @@ static {
 		driver.manage().timeouts().implicitlyWait(i, TimeUnit.SECONDS);
 	}
 	
-	@AfterMethod(groups= {"validlogin","invalidlogin"})
+	@AfterMethod
 	public static void closeBrowser() {
 		driver.quit();
 	}
